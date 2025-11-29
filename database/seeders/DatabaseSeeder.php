@@ -17,9 +17,13 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
+        // Ensure we don't create duplicate users on repeated seeding
+        User::firstOrCreate([
             'email' => 'test@example.com',
+        ], [
+            'name' => 'Test User',
+            'email_verified_at' => now(),
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
         ]);
     }
 }
