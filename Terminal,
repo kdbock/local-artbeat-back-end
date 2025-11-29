@@ -1,0 +1,1 @@
+Use cPanel File Manager to edit /home/krisdbrk/public_html/localartbeat/.htaccess. Add 'RewriteCond %{REQUEST_URI} In cPanel, go to Advanced or use SSH if fixed. Run: cd /home/krisdbrk/public_html/localartbeat/api
