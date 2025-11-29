@@ -27,6 +27,7 @@ return [
         'https://local-artbeat-frontend.vercel.app',
         'https://www.localartbeat.com',
         'https://local-artbeat-admin.vercel.app',
+        'https://local-artbeat-admin-git-main-kdbocks-projects.vercel.app',
     ],
 
     'allowed_origins_patterns' => [],
