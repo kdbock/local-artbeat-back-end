@@ -4,6 +4,10 @@
     </IfModule>
 
     RewriteEngine On
+    # Explicit base: DocumentRoot pointed to backend-api/public. Keep this set to `/`.
+    # Previously this was set to `/api/`, which caused double `/api/api` or 404s when
+    # the domain root already pointed at the `public` directory.
+    RewriteBase /
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

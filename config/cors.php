@@ -26,6 +26,8 @@ return [
         'http://localhost:3002',
         'https://local-artbeat-frontend.vercel.app',
         'https://www.localartbeat.com',
+        'https://localartbeat.com',
+        'https://admin.localartbeat.com',
         'https://local-artbeat-admin.vercel.app',
         'https://local-artbeat-admin-git-main-kdbocks-projects.vercel.app',
     ],
